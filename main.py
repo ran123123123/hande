@@ -10,7 +10,7 @@ import nlp_task.func as nlp_task
 import speech_task.func as speech_task
 
 def test_cv_task(imga_path, imgb_path, output_path):
-    config = json.loads(const.EV_AUTO_TEST_CONFIG_PARAMS)
+    config = json.loads(const.EV_AUTO_TEST_CONFIG_PARAMS.replace("'", "\""))
     config["data_set_type"] = "CV"
     config["pretreatment"] = {
         "fill_flag": 1,
