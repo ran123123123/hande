@@ -156,7 +156,7 @@ if __name__ == "__main__":
         json.dump(ret_json, fout, indent=2)
 
     # for NLP
-    # 第四个函数做文本去重需要用到字符串数组，实现里面将输入字符串copy了10份
+    # 第四个函数做文本去重需要用到字符串数组，实现里面将输入字符串copy了10份.
     input_str = "xxxx xxxx 123 https://baidu.com yyyy"
     ret_json = test_nlp_task(input_str)
     with open("test_nlp_task_result.json", "w", encoding="utf-8") as fout:
